@@ -12,6 +12,11 @@
 #ifndef HLLIB_H
 #define HLLIB_H
 
+
+#ifdef _WIN32
+#include <Windows.h>
+#endif
+
 #ifdef _MSC_VER
 #	ifdef HLLIB_EXPORTS
 #		define HLLIB_API __declspec(dllexport)
